@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Inicio = new System.Windows.Forms.Button();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.SuspendLayout();
             // 
             // Inicio
@@ -57,6 +59,7 @@
         #endregion
 
         private System.Windows.Forms.Button Inicio;
+        private System.IO.Ports.SerialPort serialPort1;
     }
 }
 
