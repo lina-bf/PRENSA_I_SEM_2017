@@ -33,9 +33,9 @@
             // 
             // Inicio
             // 
-            this.Inicio.Location = new System.Drawing.Point(25, 24);
+            this.Inicio.Location = new System.Drawing.Point(12, 12);
             this.Inicio.Name = "Inicio";
-            this.Inicio.Size = new System.Drawing.Size(115, 53);
+            this.Inicio.Size = new System.Drawing.Size(115, 35);
             this.Inicio.TabIndex = 0;
             this.Inicio.Text = "Inicio";
             this.Inicio.UseVisualStyleBackColor = true;

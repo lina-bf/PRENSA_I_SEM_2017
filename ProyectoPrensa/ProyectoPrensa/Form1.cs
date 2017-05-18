@@ -12,9 +12,6 @@ namespace ProyectoPrensa
 {
     public partial class Eje : Form
     {
-        public Eje()
-        {
-            InitializeComponent();
-        }
+
     }
 }
