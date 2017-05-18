@@ -1,6 +1,6 @@
 ﻿namespace ProyectoPrensa
 {
-    partial class Form1
+    partial class Eje
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Inicio = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Inicio
+            // 
+            this.Inicio.Location = new System.Drawing.Point(25, 24);
+            this.Inicio.Name = "Inicio";
+            this.Inicio.Size = new System.Drawing.Size(115, 53);
+            this.Inicio.TabIndex = 0;
+            this.Inicio.Text = "Inicio";
+            this.Inicio.UseVisualStyleBackColor = true;
+            // 
+            // Eje
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(870, 432);
+            this.Controls.Add(this.Inicio);
+            this.Name = "Eje";
+            this.Text = "Ejecucion Prensa";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button Inicio;
     }
 }
 
