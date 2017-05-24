@@ -17,17 +17,46 @@ namespace ProyectoPrensa
         public Eje ()
         {
             InitializeComponent();
-            Code();
-        
         }
-        private void Code()
-        {
-            newport = new SerialPort();
-            newport.BaudRate = 9600;
-            newport.PortName = "COM4";
-            newport.Open();
-            Inicio.Enabled = true;
 
+        private void Inicio_Click(object sender, EventArgs e)
+        {
+            serialPort1.Open();
+            try
+            {
+                serialPort1.Write("1");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void P1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                serialPort1.Write("0");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            serialPort1.Close();
+        }
+
+        private void Boton6_Click(object sender, EventArgs e)
+        {
+            serialPort1.Open();
+            try
+            {
+                serialPort1.Write("6");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
         }
     }
 }
